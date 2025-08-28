@@ -3,28 +3,30 @@
   <head>
     <title>Chessboard</title>
     <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+      }
       .container {
         display: grid;
-        background-color: #f0d9b5;
+        align-content: center;
+        justify-content: center;
         grid-template-columns: repeat(8, 1fr);
         grid-template-rows: repeat(8, 1fr);
         width: 500px;
         height: 500px;
-        border: 2px solid #333; /
+        border: 2px solid #333;
+        flex-shrink: 0;
       }
       .white {
         background-color: #f0d9b5;
-        border: 1px;
       }
       .black {
-        grid-template-columns: repeat(8, 1fr);
-        grid-template-rows: repeat(8, 1fr);
         background-color: #b58863;
-        border: 1px;
       }
-      /* Write your code here */
-      /* Each square should be 100px by 100px */
-      /* My colours for white: #f0d9b5, black: #b58863 */
     </style>
   </head>
 
